@@ -58,7 +58,7 @@ class String
 
   # Returns the String as a SOAP value. Escapes special characters for XML.
   def to_soap_value
-    CGI.escapeHTML self
+    self #CGI.escapeHTML self
   end
 
   # Convert the String into a SOAP value without escaping special characters.
